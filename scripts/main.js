@@ -10,6 +10,8 @@ var result = totalPrice / items.length
 console.log(result);
 console.log('Next');
 
+
+
 console.log('Problem 2');
  let filterPrices = items.filter(function(item) {
    return (item.price >= 14 && item.price < 18);
@@ -23,6 +25,8 @@ function displayTitle (item, index){
 console.log('Next');
 
 
+
+
 console.log('Problem 3');
 let currency = "GBP";
 let newCurrency = items.filter(function(item) {
@@ -33,4 +37,15 @@ newCurrency.forEach(displayTitleAndPrice);
 function displayTitleAndPrice (item, index){
    console.log(item.title, item.price);
 }
+console.log('Next');
+
+
+console.log('Problem 4');
+
+let material = 'wood';
+let newMaterial = items.filter(function(item){
+  return item.materials.includes('wood');
+});
+newMaterial.forEach(displayTitle);
+
 console.log('Next');
