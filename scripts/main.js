@@ -67,3 +67,17 @@ function displayMaterials(item, index) {
 newMaterialSize.forEach(displayMaterials);
 
 console.log('Next')
+
+
+
+
+console.log('Problem 6')
+
+let seller = "i_did";
+let newSeller = items.filter(function(item) {
+  return item.who_made.includes('i_did');
+});
+
+console.log(newSeller.length + ' Were made by their sellers');
+
+console.log('End')
